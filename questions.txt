@@ -1,0 +1,43 @@
+Part One
+
+HTTP is a protocol for fetching resources and documents, it allows browsers and servers to communicate.
+A URL is the address of a web page, made up of several components.
+A DNS is a system that turns domain names into IP addresses
+A query string is text in the URL that is passed to the server, it has a use, often to change pages.
+GET and POST are two HTTP verbs - GET requests without changing data on the server side, POST requests and does change on the 
+server side.
+An HTTP request is a message sent by the client to initiate action on the server-side.
+An HTTP response should provide the client with the resource it requested, or inform the client of an errors, or
+inform the client the requested action has been carried out.
+An HTTP header is a name or value pair that is displayed in request and response messages of message header for HTTP.
+They pass additional information between the client and server.
+http://somesite.com/some/page.html when you type into browser:
+Your browser will look up the IP address for the domain (somesite.com)
+The browser will initiate a connection with the server - either a TCP (transmission control protocol), or a 
+content delivery network. The browswer will send an HTTP request to the server, and the server will processes
+that request and respond. Once your browser has received that response from the server, it can render whatever content has been 
+sent (hopefully the webpage, but possibly an error message).
+
+Part Two
+
+1. curl icanhazdadjoke.com grep "<pirate>"
+2. $ dig icanhazdadjoke.com +short
+3. Completed and viewed via localhost:8000
+
+Part Three
+
+GET
+<form action="index.html" method="GET">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+POST
+
+When changing to POST, the query string is no longer visible in the URL on form submit.
+The request and response headers appear to be visible in the Network tab of developer tools.
+
